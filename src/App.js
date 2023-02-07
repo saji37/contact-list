@@ -5,11 +5,6 @@ function App() {
   const [num,setNum] = useState('')
   const [contacts,setContacts] = useState([])
 
-  function getDayName(dateStr, locale)
-{
-    var date = new Date(dateStr);
-    return date.toLocaleDateString(locale, { weekday: 'long' });        
-}
 
 const createContact=()=>{
 setContacts([...contacts,{name:name,number:num}])
